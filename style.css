@@ -12,5 +12,13 @@
 
 .trybewarts-header-tittle {
   display: flex;
+}
 
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
