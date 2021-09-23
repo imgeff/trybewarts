@@ -14,7 +14,7 @@ loginBtn.addEventListener('click', loginVerification);
 
 const agreementCheckBox = document.getElementById('agreement');
 const acceptBtn = document.getElementById('submit-btn');
-function myFunction() {
+function acceptVerificate() {
   if (agreementCheckBox.checked) {
     agreementCheckBox.setAttribute('checked', 'checked');
     acceptBtn.disabled = false;
@@ -23,4 +23,4 @@ function myFunction() {
     acceptBtn.disabled = true;
   }
 }
-agreementCheckBox.addEventListener('click', myFunction);
+agreementCheckBox.addEventListener('click', acceptVerificate);
