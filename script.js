@@ -11,3 +11,16 @@ function loginVerification(event) {
   }
 }
 loginBtn.addEventListener('click', loginVerification);
+
+const agreementCheckBox = document.getElementById('agreement');
+const acceptBtn = document.getElementById('submit-btn');
+function myFunction() {
+  if (agreementCheckBox.checked) {
+    agreementCheckBox.setAttribute('checked', 'checked');
+    acceptBtn.disabled = false;
+  } else {
+    agreementCheckBox.removeAttribute('checked');
+    acceptBtn.disabled = true;
+  }
+}
+agreementCheckBox.addEventListener('click', myFunction);
