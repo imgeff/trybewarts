@@ -1,3 +1,9 @@
+body {
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -10,8 +16,8 @@
   align-items: center;
 }
 
-.trybewarts-header-tittle {
-  display: flex;
+#trybewarts-header-title {
+  color: white;
 }
 
 main {
@@ -35,4 +41,30 @@ main {
 #family-options {
   display: flex;
   flex-direction: column;
+}
+
+.trybewarts-header-logo {
+  max-height: 100px;
+  margin-left: 20px;
+}
+
+#email, #password {
+  font-weight: 700;
+  font-family: 'Noto Serif', serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+#login-button {
+  font-weight: 700;
+  font-family: 'Noto Serif', serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 20px;
+  width: 170px;
+  background-color:  #4e2c83;
+  color: white;
 }
