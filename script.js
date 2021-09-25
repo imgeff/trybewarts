@@ -40,7 +40,7 @@ acceptBtn.addEventListener('click', (event) => {
   event.preventDefault();
   const inputName = document.getElementById('input-name');
   const inputLastName = document.getElementById('input-lastname');
-  const nameValue = 'Nome: ' + inputName.value + ' ' + inputLastName.value;
+  const nameValue = `Nome: ${ inputName.value } ${ inputLastName.value } `;
   const divName = document.getElementById('name-complete');
   const pTagName = document.createElement('p');
   pTagName.innerText = nameValue;
