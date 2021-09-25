@@ -44,20 +44,25 @@ acceptBtn.addEventListener('click', (event) => {
   const divName = document.getElementById('name-complete');
   const pTagName = document.createElement('p');
   pTagName.innerText = nameValue;
-  divName.appendChild(pTagName)
+  divName.appendChild(pTagName);
   divName.removeChild(inputName);
   divName.removeChild(inputLastName);
+});
+acceptBtn.addEventListener('click', () => {
   // Email
   const divEmailHouse = document.getElementById('email-house');
   const inputEmail = document.getElementById('input-email');
   const emailValue = `Email: ${inputEmail.value}`;
-  const pTagEmail  = document.createElement('p');
+  const pTagEmail = document.createElement('p');
   const labelHouse = document.querySelector('label');
   pTagEmail.innerText = emailValue;
   divEmailHouse.appendChild(pTagEmail);
   divEmailHouse.removeChild(inputEmail);
-  divEmailHouse.removeChild(labelHouse)
+  divEmailHouse.removeChild(labelHouse);
+});
+acceptBtn.addEventListener('click', () => {
   // Casa
+  const divEmailHouse = document.getElementById('email-house');
   const selectHouse = document.getElementById('house');
   const selectHouseValue = selectHouse.value;
   const pTagHouse = document.createElement('p');
@@ -65,6 +70,8 @@ acceptBtn.addEventListener('click', (event) => {
   pTagHouse.innerText = `Casa: ${selectHouseValue}`;
   spanHouse.appendChild(pTagHouse);
   divEmailHouse.removeChild(selectHouse);
+});
+acceptBtn.addEventListener('click', () => {
   // Família
   let familyCheckedValue;
   const divFamily = document.getElementById('family-options');
@@ -79,8 +86,10 @@ acceptBtn.addEventListener('click', (event) => {
   pTagFamily.innerText = `Família: ${familyCheckedValue}`;
   divFamily.appendChild(pTagFamily);
   for (let index = 0; index < spanFamily.length; index += 1) {
-    divFamily.removeChild(spanFamily[index])
+    divFamily.removeChild(spanFamily[index]);
   }
+});
+acceptBtn.addEventListener('click', () => {
   // CheckBox conteúdo
   const divCheckBoxOptions = document.getElementById('checkbox-options');
   const valueCheckeds = [];
@@ -97,6 +106,8 @@ acceptBtn.addEventListener('click', (event) => {
   for (let index = 0; index < spanContents.length; index += 1) {
     divCheckBoxOptions.removeChild(spanContents[index]);
   }
+});
+acceptBtn.addEventListener('click', () => {
   // Avaliação
   let avaliationCheckedValue;
   const divAvaliation = document.getElementById('avaliation');
@@ -111,6 +122,8 @@ acceptBtn.addEventListener('click', (event) => {
   pTagAvaliation.innerText = `Avaliação: ${avaliationCheckedValue}`;
   divAvaliation.appendChild(pTagAvaliation);
   divAvaliation.removeChild(spanAvaliation);
+});
+acceptBtn.addEventListener('click', () => {
   // Observações
   const textarea = document.getElementById('textarea');
   const textareaValue = textarea.value;
@@ -119,11 +132,13 @@ acceptBtn.addEventListener('click', (event) => {
   pTagTextarea.innerText = `Observações: ${textareaValue}`;
   divComent.appendChild(pTagTextarea);
   divComent.removeChild(textarea);
+});
+acceptBtn.addEventListener('click', () => {
   // Remove Labels e contador textarea
   const labels = document.querySelectorAll('label');
-  for (let index = 0; index < labels.length -1; index += 1) {
+  for (let index = 0; index < labels.length - 1; index += 1) {
     labels[index].remove();
   }
   const counter = document.getElementById('counter');
   counter.remove();
-})
+});
