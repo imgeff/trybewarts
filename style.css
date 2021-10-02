@@ -81,8 +81,10 @@ main {
 }
 
 form span h1 {
+  padding: 10px 20px;
+  border-radius: 5px;
   text-align: center;
-  width: 680px;
+  width: 658px;
 }
 
 #name-complete input, #input-email {
@@ -162,8 +164,8 @@ textarea {
 
 #counter {
   background-color: white;
-  width: 35px;
-  height: 25px;
+  width: 34px;
+  height: 24px;
   position: absolute;
   margin-left: 670px;
   margin-top: 80px;
@@ -184,6 +186,15 @@ textarea {
   width: 705px;
 }
 
+
+p {
+  background-color: #f4eed7;
+  border: 2px solid #4e2c83;
+  border-radius: 3px;
+  padding: 0px 10px;
+  width: 95%;
+}
+
 footer {
   margin-top: 5%;
   display: flex;
@@ -192,4 +203,13 @@ footer {
   background-color: #3c404a;
   color: white;
   height: 45px;
+}
+
+footer p {
+  background-color: #3c404a;
+  border: none;
+}
+
+#house-before p {
+  width: 95%;
 }

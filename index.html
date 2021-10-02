@@ -24,7 +24,7 @@
   <main>   
     <form id="evaluation-form">
       <span>
-        <h1>Formulário de Avaliação</h1>
+        <h1 id="h1-title">Formulário de Avaliação</h1>
       </span>
       <div id="name-complete">
       <input id="input-name" placeholder="Nome">
@@ -97,35 +97,35 @@
       <div id="avaliation">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <span id="note">
-          <input type="radio" value="1" name="rate"> 
-          <label>1</label>
-          <input type="radio" value="2" name="rate"> 
-          <label>2</label>
-          <input type="radio" value="3" name="rate"> 
-          <label>3</label>
-          <input type="radio" value="4" name="rate"> 
-          <label>4</label>
-          <input type="radio" value="5" name="rate"> 
-          <label>5</label>
-          <input type="radio" value="6" name="rate"> 
-          <label>6</label>
-          <input type="radio" value="7" name="rate"> 
-          <label>7</label>
-          <input type="radio" value="8" name="rate"> 
-          <label>8</label>
-          <input type="radio" value="9" name="rate"> 
-          <label>9</label>
-          <input type="radio" value="10" name="rate"> 
-          <label>10</label>
+          <input type="radio" id="note-one" value="1" name="rate"> 
+          <label for="note-one">1</label>
+          <input type="radio" id="note-two" value="2" name="rate"> 
+          <label for="note-two">2</label>
+          <input type="radio" id="note-three" value="3" name="rate"> 
+          <label for="note-three">3</label>
+          <input type="radio" id="note-four" value="4" name="rate"> 
+          <label for="note-four">4</label>
+          <input type="radio" id="note-five" value="5" name="rate"> 
+          <label for="note-five">5</label>
+          <input type="radio" id="note-six" value="6" name="rate"> 
+          <label for="note-six">6</label>
+          <input type="radio" id="note-seven" value="7" name="rate"> 
+          <label for="note-seven">7</label>
+          <input type="radio" id="note-eight" value="8" name="rate"> 
+          <label for="note-eight">8</label>
+          <input type="radio" id="note-nine" value="9" name="rate"> 
+          <label for="note-nine">9</label>
+          <input type="radio" id="note-ten" value="10" name="rate"> 
+          <label for="note-ten">10</label>
           </span>
       </div>
       <label class="textarea">Deixe seu comentário:</label>
       <div id="coment">
         <textarea maxlength="500" id="textarea"></textarea>
-        <p id="counter">500</p>
+        <span id="counter">500</span>
       </div>
       <div id="accept-info">
-        <label id="label-infos">Você concorda com o uso das informações acima?</label>
+        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox" >
       </div>
       <div>
@@ -135,9 +135,9 @@
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts big logo">
   </main>
   <footer>
-    <p>
+    <span>
       Direitos reservados à Trybewarts©
-    </p>
+    </span>
   </footer>
   <script type="text/javascript" src="script.js"></script>
 </body>

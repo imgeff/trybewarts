@@ -145,3 +145,19 @@ acceptBtn.addEventListener('click', () => {
   const spanHome = document.getElementById('home');
   spanHome.remove();
 });
+
+acceptBtn.addEventListener('click', () => {
+  // estilização pós click
+  const form = document.getElementById('evaluation-form');
+  form.style.border = '2px solid #4e2c83';
+  form.style.paddingLeft = '10px';
+  form.style.borderRadius = '5px';
+  form.style.width = '710px';
+  const radiosChecks = document.getElementById('radios-checks');
+  const divFamily = document.getElementById('what-family');
+  const divMaterias = document.getElementById('what-content');
+  radiosChecks.style.width = '697px';
+  divFamily.style.width = '100%';
+  divMaterias.style.width = '100%';
+  divMaterias.style.marginLeft = '2%';
+});
