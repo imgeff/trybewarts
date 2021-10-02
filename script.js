@@ -141,4 +141,7 @@ acceptBtn.addEventListener('click', () => {
   }
   const counter = document.getElementById('counter');
   counter.remove();
+
+  const spanHome = document.getElementById('home');
+  spanHome.remove();
 });

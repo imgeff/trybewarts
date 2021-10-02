@@ -1,7 +1,12 @@
 body {
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
   font-family: 'Noto Serif', serif;
   margin: 0;
   padding: 0;
+  background-color: #efefef;
+  line-height: 2em;
 }
 
 .header {
@@ -9,6 +14,7 @@ body {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0px;
 }
 
 .trybewarts-login {
@@ -22,16 +28,21 @@ body {
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
 #evaluation-form {
+  margin-top: 20px;
+  margin-left: 8%;
   display: flex;
-  width: 675px;
+  width: 100%;
   flex-direction: column;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin-right: 8%;
+  margin-top: 5%;
 }
 
 #evaluation-form div {
@@ -67,4 +78,118 @@ main {
   width: 170px;
   background-color:  #4e2c83;
   color: white;
+}
+
+form span h1 {
+  text-align: center;
+  width: 680px;
+}
+
+#name-complete input, #input-email {
+  font-weight: 700;
+  font-family: 'Noto Serif', serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  width: 315px;
+}
+
+#email-house {
+  display: flex;
+  align-items: center;
+}
+
+#email-house select {
+  background-color: white;
+  font-weight: 700;
+  font-family: 'Noto Serif', serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 285px;
+}
+
+#email-house span {
+  height: 83%;
+  margin-right: 5px;
+}
+
+#what-family, #what-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#what-content {
+  margin-left: 5%;
+}
+
+#what-family {
+  width: 40%;
+}
+
+#radios-checks {
+  width: 700px;
+}
+
+#checkbox-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contents {
+  width: 120px;
+}
+
+#avaliation #note {
+  margin-left: 10px;
+}
+
+#accept-info {
+  align-items: center;
+}
+
+textarea {
+  border: 1px solid #4e2c83;
+  border-radius: 3px;
+  width: 700px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#counter {
+  background-color: white;
+  width: 35px;
+  height: 25px;
+  position: absolute;
+  margin-left: 670px;
+  margin-top: 80px;
+  border-radius: 3px;
+}
+
+#submit-btn {
+  background-color: #4e2c83;
+  color: white;
+  font-weight: 700;
+  font-family: 'Noto Serif', serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 5%;
+  width: 705px;
+}
+
+footer {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c404a;
+  color: white;
+  height: 45px;
 }

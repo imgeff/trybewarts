@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trybewarts</title>
+  <link href="http://fonts.cdnfonts.com/css/harry-potter" crossorigin="">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
@@ -20,8 +21,11 @@
       <button id="login-button">Entrar</button>
     </form>
   </header>
-  <main>
+  <main>   
     <form id="evaluation-form">
+      <span>
+        <h1>Formulário de Avaliação</h1>
+      </span>
       <div id="name-complete">
       <input id="input-name" placeholder="Nome">
       <input id="input-lastname" placeholder="Sobrenome" >
@@ -29,7 +33,9 @@
     </div>
       <div id="email-house">
         <input id="input-email" type="email" placeholder="Email"> 
-        <label for="house">Casa:</label> 
+        <span id="home">
+          <label for="house">Casa:</label> 
+        </span>
         <select id="house">
           <option id="gitnoria-house" name="text" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" name="text" value="Reactpuff">Reactpuff</option>
@@ -37,49 +43,57 @@
           <option id="pytherina-house"  name="text"  value="Pytherina" >Pytherina</option>
         </select>
       </div>
+      <hr>
       <span id="house-before"></span>
-      <label id="label-family" for="">Qual sua família?</label>
-     <div id="family-options">
-       <span class="family">
-      <input id="frontend" name="family" type="radio" value="Frontend"> 
-      <label for="frontend">Família Frontend</label>
-      </span>
-      <span class="family">
-      <input id="backend" name="family" type="radio" value="Backend">
-      <label for="backend">Família Backend</label>
-      </span>
-      <span class="family">
-      <input id="fullstack" name="family" type="radio" value="FullStack">
-      <label for="fullstack" >Família FullStack</label>
-    </span>
-     </div> 
-     <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-     <div id="checkbox-options">
-       <span class="contents">
-      <input id="HoFs" class="subject" type="checkbox" value="HoFs"> 
-      <label for="HoFs">HoFs</label>
-      </span>
-      <span class="contents">
-      <input id="Jest" class="subject" type="checkbox" value="Jest">
-      <label for="Jest">Jest</label>
-      </span>
-      <span class="contents">
-      <input id="Promises" class="subject" type="checkbox" value="Promises">
-      <label for="Promises" >Promises</label>
-    </span>
-    <span class="contents">
-      <input id="React" class="subject" type="checkbox" value="React">
-      <label for="React" >React</label>
-    </span>
-    <span class="contents">
-      <input id="SQL" class="subject" type="checkbox" value="SQL">
-      <label for="SQL" >SQL</label>
-    </span>
-    <span class="contents">
-      <input id="Python" class="subject" type="checkbox" value="Python">
-      <label for="Python" >Python</label>
-    </span>
-     </div>
+      <div id="radios-checks">
+        <div id="what-family">
+          <label id="label-family" for="">Qual sua família?</label>
+         <div id="family-options">
+           <span class="family">
+          <input id="frontend" name="family" type="radio" value="Frontend"> 
+          <label for="frontend">Família Frontend</label>
+          </span>
+          <span class="family">
+          <input id="backend" name="family" type="radio" value="Backend">
+          <label for="backend">Família Backend</label>
+          </span>
+          <span class="family">
+          <input id="fullstack" name="family" type="radio" value="FullStack">
+          <label for="fullstack" >Família FullStack</label>
+        </span>
+        </div>
+       </div> 
+       <div id="what-content">
+         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+         <div id="checkbox-options">
+           <span class="contents">
+          <input id="HoFs" class="subject" type="checkbox" value="HoFs"> 
+          <label for="HoFs">HoFs</label>
+          </span>
+          <span class="contents">
+          <input id="Jest" class="subject" type="checkbox" value="Jest">
+          <label for="Jest">Jest</label>
+          </span>
+          <span class="contents">
+          <input id="Promises" class="subject" type="checkbox" value="Promises">
+          <label for="Promises" >Promises</label>
+        </span>
+        <span class="contents">
+          <input id="React" class="subject" type="checkbox" value="React">
+          <label for="React" >React</label>
+        </span>
+        <span class="contents">
+          <input id="SQL" class="subject" type="checkbox" value="SQL">
+          <label for="SQL" >SQL</label>
+        </span>
+        <span class="contents">
+          <input id="Python" class="subject" type="checkbox" value="Python">
+          <label for="Python" >Python</label>
+        </span>
+         </div>
+       </div>
+      </div>
+     <hr>
       <div id="avaliation">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <span id="note">
@@ -110,7 +124,7 @@
         <textarea maxlength="500" id="textarea"></textarea>
         <p id="counter">500</p>
       </div>
-      <div>
+      <div id="accept-info">
         <label id="label-infos">Você concorda com o uso das informações acima?</label>
         <input id="agreement" type="checkbox" >
       </div>
@@ -120,7 +134,11 @@
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts big logo">
   </main>
-  <footer>Direitos reservados à Trybewarts©</footer>
+  <footer>
+    <p>
+      Direitos reservados à Trybewarts©
+    </p>
+  </footer>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
