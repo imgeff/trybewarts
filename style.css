@@ -2,10 +2,10 @@ body {
   display: flex;
   align-items: space-between;
   flex-direction: column;
-  font-family: 'Noto Serif', serif;
+  font-family: Noto Serif, serif;
   margin: 0;
   padding: 0;
-  background-color: #efefef;
+  background-color: rgb(239, 239, 239);
   line-height: 2em;
 }
 
@@ -14,7 +14,7 @@ body {
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 10px 0;
 }
 
 .trybewarts-login {
@@ -59,9 +59,9 @@ main {
   margin-left: 20px;
 }
 
-#email, #password {
+#email , #password {
   font-weight: 700;
-  font-family: 'Noto Serif', serif;
+  font-family: Noto Serif, serif;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -70,13 +70,13 @@ main {
 
 #login-button {
   font-weight: 700;
-  font-family: 'Noto Serif', serif;
+  font-family: Noto Serif, serif;
   padding: 10px;
   border-radius: 5px;
   border: none;
   margin-right: 20px;
   width: 170px;
-  background-color:  #4e2c83;
+  background-color: rgb(78, 44, 131);
   color: white;
 }
 
@@ -87,9 +87,9 @@ form span h1 {
   width: 658px;
 }
 
-#name-complete input, #input-email {
+#name-complete input , #input-email {
   font-weight: 700;
-  font-family: 'Noto Serif', serif;
+  font-family: Noto Serif, serif;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -106,7 +106,7 @@ form span h1 {
 #email-house select {
   background-color: white;
   font-weight: 700;
-  font-family: 'Noto Serif', serif;
+  font-family: Noto Serif, serif;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -120,7 +120,7 @@ form span h1 {
   margin-right: 5px;
 }
 
-#what-family, #what-content {
+#what-family , #what-content {
   display: flex;
   flex-direction: column;
 }
@@ -155,7 +155,7 @@ form span h1 {
 }
 
 textarea {
-  border: 1px solid #4e2c83;
+  border: 1px solid rgb(78, 44, 131);
   border-radius: 3px;
   width: 700px;
   height: 100px;
@@ -173,10 +173,10 @@ textarea {
 }
 
 #submit-btn {
-  background-color: #4e2c83;
+  background-color: rgb(78, 44, 131);
   color: white;
   font-weight: 700;
-  font-family: 'Noto Serif', serif;
+  font-family: Noto Serif, serif;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -188,10 +188,10 @@ textarea {
 
 
 p {
-  background-color: #f4eed7;
-  border: 2px solid #4e2c83;
+  background-color: rgb(239, 239, 239);
+  border: 2px solid rgb(78, 44, 131);
   border-radius: 3px;
-  padding: 0px 10px;
+  padding: 0 10px;
   width: 95%;
 }
 
@@ -200,13 +200,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3c404a;
+  background-color: rgb(60, 64, 74);
   color: white;
   height: 45px;
 }
 
 footer p {
-  background-color: #3c404a;
+  background-color: rgb(60, 64, 74);
   border: none;
 }
 
